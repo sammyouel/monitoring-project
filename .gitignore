@@ -1,0 +1,26 @@
+# Ignore Prometheus binaries and auxiliary files
+prometheus.exe
+promtool.exe
+alertmanager.exe
+
+# Ignore data and log directories
+data/
+logs/
+
+# Ignore console-related libraries and files
+console_libraries/
+consoles/
+
+# Ignore all other files larger than 100MB
+*.zip
+*.tar.gz
+
+# Ignore Visual Studio Code settings and workspace files
+.vscode/
+
+# Explicitly include critical project files
+!prometheus.yml
+!alert.rules.yml
+!LICENSE
+!NOTICE
+!README.md
