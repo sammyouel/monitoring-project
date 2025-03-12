@@ -2,7 +2,7 @@
 
 ### **Step 1: Install Prometheus**
 
-![image.png](image.png)
+![image.png](C:\Users\Kumar\Downloads\7bfc5d6b-f2f9-4c1c-84f6-77130ca5e8f0_Export-d9cbf959-c643-49f3-be93-91ecb79101b1\image.png)
 
 1. **Download Prometheus:**
     - Visit the Prometheus download page.
