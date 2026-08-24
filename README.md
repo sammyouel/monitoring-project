@@ -1,4 +1,6 @@
-# Grafana + Prometheus
+# An end-to-end telemetry and system observability pipeline built using **Prometheus**, **Grafana**, and **windows_exporter**. This project automates the collection, storage, visualization, and alerting of host-level performance metrics (CPU, Memory, Disk I/O, Network, and OS Service states) to detect system bottlenecks, service failures, and resource exhaustion in real time.
+
+
 
 ### **Step 1: Install Prometheus**
 
