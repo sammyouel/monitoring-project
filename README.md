@@ -1,5 +1,26 @@
-# An end-to-end telemetry and system observability pipeline built using **Prometheus**, **Grafana**, and **windows_exporter**. This project automates the collection, storage, visualization, and alerting of host-level performance metrics (CPU, Memory, Disk I/O, Network, and OS Service states) to detect system bottlenecks, service failures, and resource exhaustion in real time.
+#Objective
+This project demonstrates a production-grade approach to IT infrastructure monitoring and incident detection. I designed and deployed a telemetry stack using **Prometheus** and **Grafana** to actively monitor Windows systems. 
 
+In a technical support or SaaS environment (such as managing local point-of-sale hardware, IoT controllers, or web servers), having visibility into local system health is critical for root-cause analysis. This project allowed me to transition from *reactive* troubleshooting (waiting for a user to report a crash) to *proactive* monitoring (observing resource spikes before they cause a timeout).
+
+## Key Features
+1. **Real-Time Dashboards:** Visualizing WMI data streams in Grafana to easily spot anomalies.
+2. **Resource Tracking:** Granular monitoring of CPU threads, RAM allocation, and network interface bottlenecks.
+3. **Automated Data Scraping:** Configured Prometheus `prometheus.yml` to target the local WMI exporter on port `9182`.
+4. **Alerting Foundations:** Establishing baseline thresholds to trigger alerts when system resources exceed operational limits (simulating an SLA breach or service degradation).
+
+Support & Diagnostic Value
+Building this stack provided hands-on experience with:
+* Understanding how telemetry data is generated and ingested.
+* Using PromQL to filter and analyze logs.
+* Isolating the difference between a software crash (e.g., an application error) vs. a hardware limitation (e.g., a memory leak taking down the OS).
+
+## Tech Stack & Components
+
+* **Metric Collector:** `windows_exporter` (Scrapes Windows performance counters via WMI/Perflib on port `9182`)
+* **Time-Series Database:** Prometheus (Metric ingestion, time-series storage, and PromQL query evaluation)
+* **Visualization & Dashboards:** Grafana (Dynamic host telemetry dashboards, variable filtering, time-range analysis)
+* **Automation & Diagnostics:** PowerShell (Automated service installation, health checks, and endpoint validation)
 
 
 ### **Step 1: Install Prometheus**
