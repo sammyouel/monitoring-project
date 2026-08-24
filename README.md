@@ -1,4 +1,4 @@
-#Objective
+# Objective
 This project demonstrates a production-grade approach to IT infrastructure monitoring and incident detection. I designed and deployed a telemetry stack using **Prometheus** and **Grafana** to actively monitor Windows systems. 
 
 In a technical support or SaaS environment (such as managing local point-of-sale hardware, IoT controllers, or web servers), having visibility into local system health is critical for root-cause analysis. This project allowed me to transition from *reactive* troubleshooting (waiting for a user to report a crash) to *proactive* monitoring (observing resource spikes before they cause a timeout).
